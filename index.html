@@ -1,160 +1,35 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lesson 1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripHouse_Site</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzzQZBaltEAjk04xq6JAc_uacME4oZpEajg&usqp=CAU" alt="html picture">
-<ol>
-    <li> Знакомство с Web
-        <ul>
-            <li>Краткая история Web и что такое интернет.</li>
-            <li>Как устроен браузер и как он получает страницы по сети.</li>
-            <li>Что такое Git?</li>
-            <li>Создание первого репозитория.</li>
-            <li>О фацле .gitignore.</li>
-        </ul>
-    </li>
-    <li>HTML-верстка - первые шаги
-        <ul>
-            <li>Настройка рабочей среды.</li>
-            <li>Краткая история HTML.</li>
-            <li>Какие бывают теги и что такое атрибут.</li>
-            <li>Теги для работы с текстом.</li>
-            <li>Создание собственной страницы.</li>
-        </ul>
-    </li>
-    <li>Погружение в HTML-разметку
-        <ul>
-            <li>Мета-теги.</li>
-            <li>Мнемоники.</li>
-            <li>Тег для работы с изображениями.</li>
-            <li>Теги для работы со списками.</li>
-            <li>Теги для работы с таблицами.</li>
-            <li>Теги для работы с формами.</li>
-            <li>Div-блоки.</li>
-        </ul>
-    </li>
-</ol>
-<hr>
+<div class="advantages" id="advantages">
+    <h2 class="advantages-header">What do we offer</h2>
+    <hr>
+    <div class="advantages-cards-wrapper">
+        <div class="card">
+            <img class="card-img" src="media/booking.png" alt="support">
+            <h3 class="card-title">Support 24/7</h3>
+        </div>
+        <div class="card">
+            <img class="card-img" src="media/communication.png" alt="Communication">
+            <h3 class="card-title">Communicate directly</h3>
+        </div>
+        <div class="card">
+            <img class="card-img" src="media/booking.png" alt="Booking">
+            <h3 class="card-title">Book online</h3>
+        </div>
+        <div class="card">
+            <img class="card-img" src="media/reviews.png" alt="reviews">
+            <h3 class="card-title">Real guests reviews</h3>
+        </div>
+    </div>
 
-
-<table border="1" width="60%">
-    <thead>
-    <tr>
-        <th>Tag</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>&lttable&gt</td>
-        <td>Defines a table</td>
-    </tr>
-    <tr>
-        <td>&lttr&gt</td>
-        <td>Defines a row in a table</td>
-    </tr>
-    <tr>
-        <td>&ltth&gt</td>
-        <td rowspan="2">Defines a "header cell"/"cell" in a table</td>
-    </tr>
-    <tr>
-        <td>&lttd&gt</td>
-    </tr>
-    <tr>
-        <td colspan="2">Rarely used</td>
-    </tr>
-    <tr>
-        <td>&ltcaption&gt</td>
-        <td>Defines a table caption</td>
-    </tr>
-    <tr>
-        <td>&ltthead&gt</td>
-        <td>Groups the header content in a table</td>
-    </tr>
-    <tr>
-        <td>&lttbody&gt</td>
-        <td>Groups the body content in a table</td>
-    </tr>
-    <tr>
-        <td>&lttfoot&gt</td>
-        <td>Groups the footer content in a table</td>
-    </tr>
-    </tbody>
-</table>
-<hr>
-<form>
-    <fieldset>
-        <legend>My first form</legend>
-        <p>
-            <label for="name">Name</label><br>
-            <input id="name" name = "name" type="text" placeholder="Name"/><br>
-        </p>
-        <p>
-            <label for="e-mail">E-mail</label><br>
-            <input id="e-mail" name = "e-mail" type="email"/><br>
-        </p>
-
-        <p>
-            <label for="password">Password</label><br>
-            <input id="password" name = "password" type="password"/>
-        </p>
-
-
-        <p>
-            <label for="programming">Your programming level</label><br>
-            <input id="programming" name="level" type="range" min="0" max="10" value="5">
-        </p>
-
-
-        <p>
-            What does HTML stand for?<br>
-            <input id="hyperlinks" name="HTML_abbreviation" type="checkbox" value="1">
-            <label for="hyperlinks">Hyperlinks and Text Markup Language</label><br>
-            <input id="home_tool" name="HTML_abbreviation" type="checkbox" value="2">
-            <label for="home_tool">Home Tool Markup Language</label><br>
-            <input id="hypertext" name="HTML_abbreviation" type="checkbox" value="3">
-            <label for="hypertext">Hyper Text Markup Language</label><br>
-        </p>
-
-
-        <p>
-            What does HTTP stand for?<br>
-            <input id="a" name="HTTP abbreviation" type="radio" value="1">
-            <label for="a">Hyper Text Translate Protocol</label><br>
-            <input id="b" name="HTTP abbreviation" type="radio" value="2">
-            <label for="b">Hyper Text Transmission Protocol</label><br>
-            <input id="c" name="HTTP abbreviation" type="radio" value="3">
-            <label for="c">Hyper Text Transfer Protocol</label><br>
-        </p>
-
-
-        <p>
-            <label for="comment">Comment</label><br>
-            <textarea id="comment" cols="25" rows="5" placeholder="Comment"></textarea>
-        </p>
-
-
-        <p>
-            <label for="abbreviation">What does HTML stand for?</label><br>
-            <select id="abbreviation" name ="abbreviation">
-                <option disabled selected>Your answer</option>
-                <option value="1">Hyperlinks and Text Markup Language</option>
-                <option value="2">Home Tool Markup Language</option>
-                <option value="3">Hyper Text Markup Language</option>
-            </select>
-        </p>
-
-
-        <p><button type="submit">Send</button></p>
-    </fieldset>
-</form>
-
-
-<hr>
-<!--<h1>Моя первая страница</h1>-->
-<!--<a href="About/index.html">Об авторе</a>-->
+</div>
 </body>
 </html>

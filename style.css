@@ -1,0 +1,55 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.advantages {
+    max-width: 1440px;
+    min-height: 569px;
+}
+.advantages-header {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 3;
+    color: #383838;
+}
+
+hr {
+    margin: 20px auto 0;
+    width: 100px;
+    height: 4px;
+    background: #F5BD41;
+}
+
+.advantages-cards-wrapper {
+    margin: 104px 104px 122px 104px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 296px;
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    margin-bottom: 48px;
+}
+
+.card-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+}
