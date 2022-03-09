@@ -53,3 +53,49 @@ hr {
     text-align: center;
     margin: 0;
 }
+
+/*footer*/
+
+footer {
+    min-height: 510px;
+    width: auto;
+    background-color: #10367C;
+    padding-top: 120px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 272px 64px 104px;
+}
+
+nav p{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+nav p:last-child{
+    margin-bottom: 0;
+}
+.copyright{
+    margin-bottom: 120px;
+    margin-left: 104px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+nav h3{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.copyright, nav p, nav h3{
+    color: #ffffff;
+}
