@@ -111,3 +111,262 @@ footer {
 .copyright, .navigation li, .navigation h3{
     color: #ffffff;
 }
+
+/*header*/
+
+header{
+    background-image: url(media/bgc.jpg);
+    background-color: #04092F;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.top-navigation-main{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 105px;
+    margin-top: 50px;
+}
+
+.main-nav{
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+    margin-left: auto;
+    margin-top: 57px;
+    font-size: 24px;
+    color:#FFFFFF;
+}
+
+.stays{
+    margin-right: 24px;
+    color: #FFFFFF;
+}
+
+.attractions{
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+a:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    margin-top: 9px;
+    background-color: #F5BD41;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+a:hover:after, a:focus:after {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main-nav, .main-icons{
+    justify-content: right;
+}
+
+.main-icons{
+    margin-top:56px;
+    margin-right: 104px;
+    /*margin-left:auto;*/
+    display: flex;
+    align-items: center;
+}
+
+.day-night{
+    margin-right: 24px;
+}
+
+.form{
+    margin-top:196px;
+    margin-left: 104px;
+}
+
+.form h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: azure;
+    margin: 0;
+}
+
+.forms{
+    display: flex;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-right: 104px;
+    height: 64px;
+}
+
+.forms input{
+    margin: 0;
+    height: 64px;
+    border: solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.forms input:focus {
+    outline: 0;
+    outline-offset: 0;
+    border:3px solid #F5BD41; /* цвет обводки */
+}
+
+.city_hotel{
+    width:470px;
+    height: 64px;
+    padding-left: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    color: #383838;
+}
+
+.date{
+    width:260px;
+    height: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #383838;
+}
+
+.people{
+    width:300px;
+    height: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    color: #383838;
+}
+
+button{
+    width:192px;
+    height: 64px;
+    background-color: #3077C6;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor:pointer;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #FFFFFF; /* Green */
+    color: #3077C6;
+}
+
+.forms p{
+    margin: 0;
+    height: 64px;
+}
+
+.form-description{
+    display: flex;
+}
+
+.form-description p{
+    color: #FFFFFF;
+    margin: 100px 220px 24px 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.apps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    padding-bottom: 50px;
+}
+
+.google{
+    width: 135px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #000000;
+    position: relative;
+}
+
+.google_app_logo{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.get_it_on{
+    position: absolute;
+    top: 7px;
+    left: 42px;
+}
+
+.google_play{
+    position: absolute;
+    top: 17px;
+    bottom: 9px;
+    left: 41px;
+}
+
+.app_store{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    /*margin-top: 120px;*/
+    margin-left: 24px;
+    background-color: #000000;
+    position: relative;
+}
+
+.app_logo{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+.download{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
