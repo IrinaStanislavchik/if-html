@@ -115,11 +115,9 @@ footer {
 /*header*/
 
 header{
-    background-image: url(media/bgc.jpg);
-    background-color: #04092F;
+
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
 }
 
 .top-navigation-main{
@@ -154,6 +152,7 @@ header{
 }
 
 .attractions{
+    margin-right: 24px;
     color: #FFFFFF;
 }
 
@@ -185,9 +184,8 @@ a:hover:after, a:focus:after {
 }
 
 .main-icons{
-    margin-top:56px;
     margin-right: 104px;
-    /*margin-left:auto;*/
+    margin-left:auto;
     display: flex;
     align-items: center;
 }
@@ -196,46 +194,59 @@ a:hover:after, a:focus:after {
     margin-right: 24px;
 }
 
-.form{
-    margin-top:196px;
+/*form */
+
+section{
+    background-image: url(media/bgc.jpg);
+    background-size: 100%;
+}
+
+form{
+    padding-top:100px;
+    display: flex;
     margin-left: 104px;
 }
 
-.form h1{
+section h1{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
     line-height: 59px;
     color: azure;
-    margin: 0;
+    margin-top: 196px;
+    margin-left: 104px;
 }
 
-.forms{
-    display: flex;
-    border-radius: 5px;
-    background-color: transparent;
-    margin-right: 104px;
-    height: 64px;
-}
-
-.forms input{
+form input{
     margin: 0;
     height: 64px;
     border: solid #FFFFFF;
     border-radius: 5px;
 }
 
-.forms input:focus {
+form label{
+    margin-bottom: 50px;
+}
+
+label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+form input:focus {
     outline: 0;
     outline-offset: 0;
     border:3px solid #F5BD41; /* цвет обводки */
 }
 
-.city_hotel{
+.destination{
     width:470px;
     height: 64px;
-    padding-left: 24px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -243,6 +254,7 @@ a:hover:after, a:focus:after {
     line-height: 21px;
     text-align: left;
     color: #383838;
+    border: 0px solid;
 }
 
 .date{
@@ -255,6 +267,7 @@ a:hover:after, a:focus:after {
     line-height: 21px;
     text-align: center;
     color: #383838;
+    border: 0px solid;
 }
 
 .people{
@@ -266,6 +279,7 @@ a:hover:after, a:focus:after {
     font-size: 18px;
     text-align: left;
     color: #383838;
+    border: 0px solid;
 }
 
 button{
@@ -285,8 +299,10 @@ button{
 }
 
 button {
+    bottom: 0;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    transform: translate(0, +57%);
 }
 
 button:hover {
@@ -294,79 +310,14 @@ button:hover {
     color: #3077C6;
 }
 
-.forms p{
-    margin: 0;
-    height: 64px;
-}
-
-.form-description{
-    display: flex;
-}
-
-.form-description p{
-    color: #FFFFFF;
-    margin: 100px 220px 24px 24px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-}
-
 .apps{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
+    padding-top: 120px;
     padding-bottom: 50px;
 }
 
-.google{
-    width: 135px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: #000000;
-    position: relative;
-}
-
-.google_app_logo{
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-
-.get_it_on{
-    position: absolute;
-    top: 7px;
-    left: 42px;
-}
-
-.google_play{
-    position: absolute;
-    top: 17px;
-    bottom: 9px;
-    left: 41px;
-}
-
 .app_store{
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid white;
-    /*margin-top: 120px;*/
     margin-left: 24px;
-    background-color: #000000;
-    position: relative;
-}
-
-.app_logo{
-    position: absolute;
-    top: 9px;
-    left: 10px;
-}
-
-.download{
-    position: absolute;
-    top: 8px;
-    right: 10px;
 }
