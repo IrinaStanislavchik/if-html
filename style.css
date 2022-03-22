@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -174,7 +177,12 @@ a:after{
     transition: width 0.3s ease-out;
 }
 
-a:hover:after, a:focus:after {
+a.stays:hover:after, a.stays:focus:after {
+    width: 100%;
+    border-radius: 5px;
+}
+
+a.attractions:hover:after, a.attractions:focus:after {
     width: 100%;
     border-radius: 5px;
 }
@@ -219,14 +227,11 @@ section h1{
 }
 
 form input{
-    margin: 0;
+    margin: 24px 0px 0px 0px;
     height: 64px;
     border: solid #FFFFFF;
     border-radius: 5px;
-}
-
-form label{
-    margin-bottom: 50px;
+    padding-left: 24px;
 }
 
 label{
@@ -236,6 +241,8 @@ label{
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
 }
 
 form input:focus {
@@ -302,7 +309,7 @@ button {
     bottom: 0;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    transform: translate(0, +57%);
+    transform: translate(0, +95%);
 }
 
 button:hover {
