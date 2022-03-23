@@ -216,7 +216,7 @@ form{
 }
 
 section h1{
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
@@ -227,15 +227,15 @@ section h1{
 }
 
 form input{
-    margin: 24px 0px 0px 0px;
+    margin: 24px 0 0 0;
     height: 64px;
     border: solid #FFFFFF;
     border-radius: 5px;
-    padding-left: 24px;
+    padding: 0 24px;
 }
 
 label{
-    font-family: 'Roboto';
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -243,6 +243,7 @@ label{
     color: #FFFFFF;
     margin-bottom: 24px;
     padding-bottom: 24px;
+    padding-left:24px;
 }
 
 form input:focus {
@@ -261,7 +262,7 @@ form input:focus {
     line-height: 21px;
     text-align: left;
     color: #383838;
-    border: 0px solid;
+    border: 0 solid;
 }
 
 .date{
@@ -272,9 +273,9 @@ form input:focus {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
     color: #383838;
-    border: 0px solid;
+    border: 0 solid;
+
 }
 
 .people{
@@ -286,7 +287,7 @@ form input:focus {
     font-size: 18px;
     text-align: left;
     color: #383838;
-    border: 0px solid;
+    border: 0 solid;
 }
 
 button{
