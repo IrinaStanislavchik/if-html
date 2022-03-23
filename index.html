@@ -9,61 +9,110 @@
     <link href="fonts/Roboto/stylesheet.css" rel="stylesheet">
 </head>
 <body>
-<div class="advantages" id="advantages">
-    <h2 class="advantages-header">What do we offer</h2>
-    <hr>
-    <div class="advantages-cards-wrapper">
-        <div class="card">
-            <img class="card-img" src="media/booking.png" alt="support">
-            <h3 class="card-title">Support 24/7</h3>
+<section>
+    <header>
+        <div class="top-navigation-main">
+            <div class="logo">
+                <img src="media/logo_vector.png" alt="TripHouse logo">
+            </div>
+            <nav class="main-nav">
+                <a class="stays" href="#">Stays</a>
+                <a class="attractions" href="#">Attractions</a>
+                <div class="main-icons">
+                    <span class="day-night">
+                        <a href="#">
+                            <img src="media/Night.png">
+                        </a>
+                    </span>
+                    <span class="account">
+                        <a href="#">
+                            <img src="media/AccountCircle.png">
+                        </a>
+                    </span>
+                </div>
+            </nav>
         </div>
-        <div class="card">
-            <img class="card-img" src="media/communication.png" alt="Communication">
-            <h3 class="card-title">Communicate directly</h3>
+    </header>
+    <h1>Discover stays <br>to live, work or just relax</h1>
+    <form>
+            <p>
+                <label for="destination">Your destination or hotel name</label><br>
+                <input list="destination_city" id="destination" class="destination" name = "destination" type="text" placeholder="City or hotel"/><br>
+                <datalist id="destination_city">
+                    <option value="Минск"></option>
+                    <option value="Москва"></option>
+                    <option value="Варшава"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="date">Check-in — Check-out</label><br>
+                <input id="date" class="date" name = "date" type="date"/><br>
+            </p>
+            <p>
+            <label for="people"> </label><br>
+                <input class="people" id="people" type="text" placeholder="2 Adults — 0 Children — 1 Room">
+            </p>
+            <button id="button" type="button">Search</button>
+    </form>
+        <div class="apps">
+            <img src="media/google-play_.png"  class="google">
+            <img src="media/app_atore.png" class="app_store">
         </div>
-        <div class="card">
-            <img class="card-img" src="media/booking.png" alt="Booking">
-            <h3 class="card-title">Book online</h3>
+</section>
+    <div class="advantages" id="advantages">
+        <h2 class="advantages-header">What do we offer</h2>
+        <hr>
+        <div class="advantages-cards-wrapper">
+            <div class="card">
+                <img class="card-img" src="media/booking.png" alt="support">
+                <h3 class="card-title">Support 24/7</h3>
+            </div>
+            <div class="card">
+                <img class="card-img" src="media/communication.png" alt="Communication">
+                <h3 class="card-title">Communicate directly</h3>
+            </div>
+            <div class="card">
+                <img class="card-img" src="media/booking.png" alt="Booking">
+                <h3 class="card-title">Book online</h3>
+            </div>
+            <div class="card">
+                <img class="card-img" src="media/reviews.png" alt="reviews">
+                <h3 class="card-title">Real guests reviews</h3>
+            </div>
         </div>
-        <div class="card">
-            <img class="card-img" src="media/reviews.png" alt="reviews">
-            <h3 class="card-title">Real guests reviews</h3>
-        </div>
+
     </div>
-
-</div>
-
-<footer>
-    <ul class="navigation">
-        <li class="about">
-            <h3>About</h3>
-            <ul>
-            <li>How TripHouse works</li>
-            <li>Careers</li>
-            <li>Privacy</li>
-            <li>Terms</li>
-            </ul>
-        </li>
-        <li class="property_types">
-            <h3>Property types</h3>
-            <ul>
-            <li>Guest houses</li>
-            <li>Hotels</li>
-            <li>Apartments</li>
-            <li>Villas</li>
-            <li>Holiday homes</li>
-            <li>Hostels</li>
-            </ul>
-        </li>
-        <li class="support">
-            <h3>Support</h3>
-            <ul>
-            <li>Contact Customer Service</li>
-            <li>FAQ</li>
-            </ul>
-        </li>
-    </ul>
-    <div class="copyright">&#169; 2020 Triphouse, inc. All rights reserved</div>
-</footer>
+    <footer>
+        <ul class="navigation">
+            <li class="about">
+                <h3>About</h3>
+                <ul>
+                    <li>How TripHouse works</li>
+                    <li>Careers</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+            </li>
+            <li class="property_types">
+                <h3>Property types</h3>
+                <ul>
+                    <li>Guest houses</li>
+                    <li>Hotels</li>
+                    <li>Apartments</li>
+                    <li>Villas</li>
+                    <li>Holiday homes</li>
+                    <li>Hostels</li>
+                </ul>
+            </li>
+            <li class="support">
+                <h3>Support</h3>
+                <ul>
+                    <li>Contact Customer Service</li>
+                    <li>FAQ</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="copyright">&#169; 2020 Triphouse, inc. All rights reserved</div>
+    </footer>
 </body>
 </html>
