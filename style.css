@@ -34,12 +34,16 @@ hr {
 .advantages-cards-wrapper {
     margin: 104px 104px 122px 104px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card {
     max-width: 296px;
     background-color: #ffff;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -56,7 +60,9 @@ hr {
     line-height: 28px;
     letter-spacing: 0;
     text-align: center;
-    margin: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+
 }
 
 /*footer*/
@@ -96,7 +102,7 @@ footer {
 }
 
 .copyright{
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     margin-left: 104px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -113,6 +119,10 @@ footer {
 
 .copyright, .navigation li, .navigation h3{
     color: #ffffff;
+}
+
+.logo_footer img{
+    opacity: 0%;
 }
 
 /*header*/
@@ -328,4 +338,272 @@ button:hover {
 
 .app_store{
     margin-left: 24px;
+}
+
+/*.none {*/
+/*    display: none !important;*/
+/*}*/
+
+@media screen and (max-width: 768px) {
+
+    section{
+        display: none;
+    }
+
+    .advantages-header {
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 3;
+        color: #383838;
+    }
+
+
+    hr {
+        display: none;
+    }
+
+    .advantages-cards-wrapper {
+        margin: 0 104px 0 104px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 296px;
+        background-color: #ffff;
+        display: flex;
+        /*flex-direction: column;*/
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .card:last-child{
+        margin-bottom: 40px;
+    }
+
+    .card-img {
+        margin-bottom: 16px;
+        transform: scale(70%);
+    }
+
+    .card-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    /*footer*/
+
+
+
+    footer {
+        width: auto;
+        min-height: 200px;
+        background-color: #10367C;
+        padding-top: 40px;
+    }
+
+    .navigation li{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+    .about ul, .property_types ul, .support ul{
+        display: none;
+    }
+
+    .copyright{
+        margin-bottom: 0px;
+        padding-bottom: 0;
+        margin-left: 104px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .navigation h3{
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .copyright, .navigation li, .navigation h3{
+        color: #ffffff;
+    }
+
+    .copyright{
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo_footer img{
+        opacity: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    ul.navigation{
+        padding-top: 40px;
+        padding-bottom: 32px;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        width: 225px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    section {
+        display: none;
+    }
+
+    .advantages {
+        width: auto;
+        min-height: auto;
+    }
+
+    .advantages-header {
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 3;
+        color: #383838;
+    }
+
+
+    hr {
+        margin: 0 auto 0;
+        width: 100px;
+        height: 4px;
+        background: #F5BD41;
+    }
+
+    .advantages-cards-wrapper {
+        margin: 0 auto 40px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        max-width: 256px;
+        background-color: #ffff;
+        display: flex;
+        /*flex-direction: column;*/
+        justify-content: center;
+        align-items: center;
+        margin: 60px 15px 32px 15px;
+        /*margin-bottom: 32px;*/
+        /*margin-top: 60px;*/
+    }
+
+    .card-img {
+        margin-bottom: 16px;
+    }
+
+    .card-title {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    /*footer*/
+    footer {
+        height: auto;
+        width: auto;
+        background-color: #10367C;
+        padding-top: 90px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 64px auto;
+    }
+
+    .navigation ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .navigation li {
+        margin: 0 40px 16px 0;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .navigation li:last-child {
+        margin-right: 0;
+    }
+
+    .copyright {
+        padding-bottom: 20px;
+        margin-left: 0;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .navigation h3 {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .copyright, .navigation li, .navigation h3 {
+        color: #ffffff;
+    }
+
+    .logo_footer img {
+        opacity: 0%;
+    }
 }
